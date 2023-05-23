@@ -7,9 +7,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form runat="server">
         <br />
-        <div class="mx-auto" style="width:300px">
+       <%-- <div class="mx-auto" style="width:300px">
             <h2>Listado de Libros</h2>
-        </div>
+        </div>--%>
 
         <br />
         
@@ -103,7 +103,7 @@
                                         <asp:TemplateField HeaderText="Modificar">
                                             <ItemTemplate>
                                                 <asp:ImageButton ID="imgBtnModiLibros" runat="server" CommandArgument='<%# Eval("ISBN") + ";" + Eval("tituloLibro") + ";" + Eval("sipnosis") + ";" + Eval("numeroPaginas") + ";" + Eval("idAutor") + ";" + Eval("idEditor") %>'
-                                                    CssClass="btn form-control-ms btn-success" CommandName="modificar" CausesValidation="false"/>
+                                                    CommandName="modificar" CausesValidation="false" ImageUrl="~/Imagenes/editar.png" Width="26px" CssClass="ms-3"/>
                                             </ItemTemplate>
                                         </asp:TemplateField>
                                         <asp:BoundField DataField="ISBN" HeaderText="ISBN" InsertVisible="False" ItemStyle-HorizontalAlign="Center" />

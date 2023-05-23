@@ -7,9 +7,9 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form runat="server">
         <br />
-        <div class="mx-auto" style="width:300px">
+        <%--<div class="mx-auto" style="width:300px">
             <h2>Listado de Editores</h2>
-        </div>
+        </div>--%>
 
         <br />
         
@@ -55,7 +55,7 @@
                                     <asp:TemplateField HeaderText="Modificar" ItemStyle-HorizontalAlign="Left">
                                         <ItemTemplate>
                                             <asp:ImageButton CommandName="modificar" CommandArgument='<%# Eval("idEditor") + ";" + Eval("nombreEditor") + ";" + Eval("sedeEditor") %>' ID="imgBtnModificarAutor"
-                                                CausesValidation="false" runat="server" CssClass="btn form-control-ms btn-success" />
+                                                CausesValidation="false" runat="server" ImageUrl="~/Imagenes/editar.png" Width="26px" CssClass="ms-3" />
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:BoundField DataField="idEditor" HeaderText="Id Editor" InsertVisible="False" ItemStyle-HorizontalAlign="Left" />
